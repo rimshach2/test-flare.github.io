@@ -1,0 +1,65 @@
+.tab-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.tab-button {
+  padding: 10px 20px;
+  background: #2c2c2c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.tab-button:hover {
+  background: #444;
+}
+.tab-button.active {
+  background: #555;
+}
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.person {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.person-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.person-role {
+  color: gray;
+  font-style: italic;
+}
+.partner-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.partner-list {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+.partner-list li {
+  margin: 5px 0;
+}
+.partner-list a {
+  color: #0066cc;
+  text-decoration: none;
+}
+.partner-list a:hover {
+  text-decoration: underline;
+}
