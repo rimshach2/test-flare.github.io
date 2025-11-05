@@ -1,0 +1,45 @@
+#site_nav{
+  margin-top:.65rem;
+  display:flex;
+  gap:.75rem;          /* compact on phones */
+  flex-wrap:wrap;
+}
+
+/* Links: neutral light grey to match the Slate header */
+#site_nav a{
+  color:#e6e9ee;       /* was blue; now subtle grey */
+  text-decoration:none;
+  padding:.25rem .45rem;
+  border-radius:.35rem;
+  transition:background .15s ease, color .15s ease;
+}
+
+/* Hover/Focus: gentle highlight */
+#site_nav a:hover{ background:rgba(255,255,255,.10); }
+#site_nav a:focus{
+  outline:2px solid #9ec3ff; /* visible keyboard focus */
+  outline-offset:2px;
+}
+
+/* Current page */
+#site_nav a.active{
+  font-weight:700;
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+
+/* Small screens: keep links compact */
+@media (max-width:640px){
+  #site_nav{ gap:.5rem; }
+  #site_nav a{ padding:.25rem .4rem; font-size:0.95rem; }
+}
+
+/* Larger screens: a bit more breathing room */
+@media (min-width:641px){
+  #site_nav{ gap:1rem; }
+}
+
+/* Respect reduced-motion */
+@media (prefers-reduced-motion: reduce){
+  #site_nav a{ transition:none; }
+}
